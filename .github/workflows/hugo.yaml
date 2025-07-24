@@ -38,6 +38,13 @@ jobs:
         with:
           hugo-version: '0.148.1'
           extended: true
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+      - name: Set up Asciidoctor
+        uses: reitzig/actions-asciidoctor@v2.0.2
+      - name: Inform about Asciidoctor
+        run: asciidoctor --version
       - name: Build site
         run: hugo
       - name: Setup Pages
