@@ -38,6 +38,8 @@ jobs:
         with:
           hugo-version: '0.148.1'
           extended: true
+      - name: Build site
+        run: hugo
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
