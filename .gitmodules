@@ -1,0 +1,3 @@
+[submodule "themes/hugo-kroki"]
+	path = themes/hugo-kroki
+	url = https://github.com/hugomods/kroki

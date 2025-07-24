@@ -1,0 +1,23 @@
+---
+title: Asciidoc Test
+date: 2025-07-24
+---
+
+## Testing Kroki
+
+Test with Markdown code:
+
+```kroki {_type=plantuml}
+@startuml
+Bob -> Alice : hello
+@enduml
+```
+
+Test with link:https://docs.asciidoctor.org/asciidoc/latest/verbatim/source-blocks/[asciidoc source blocks]:
+
+[source,kroki]
+----
+@startuml
+Bob -> Alice : hello
+@enduml
+----
