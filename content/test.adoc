@@ -5,19 +5,18 @@ date: 2025-07-24
 
 ## Testing Kroki
 
-Test with Markdown code:
+### `layouts/shortcodes/kroki2.html`
 
-```kroki {_type=plantuml}
+From https://www.veriphor.com/articles/diagrams/#source-code
+
+{{< kroki2 type="plantuml" >}}
 @startuml
 Bob -> Alice : hello
 @enduml
-```
+{{< /kroki2 >}}
 
-Test with link:https://docs.asciidoctor.org/asciidoc/latest/verbatim/source-blocks/[asciidoc source blocks]:
+### kroki by hugomods, loaded from file
 
-[source,kroki]
-----
-@startuml
-Bob -> Alice : hello
-@enduml
-----
+See https://kroki.hugomods.com/docs/shortcode/
+
+{{< kroki _type="plantuml" _name="diagrams/test.puml" _output="embed" >}}
